@@ -176,7 +176,8 @@ def vertex_cover(algo: callable, graph, output_type: callable = lambda x: x, gra
 
 def main():
     doctest.testmod()
-
+    print([s for s in bounded_subsets_ordered(list(range(90, 100)) + list(range(920, 1000)), 1000)])
+    # print([s for s in bounded_subsets_ordered(list(range(50, 150)), 103)])
 
 if __name__ == '__main__':
     main()
